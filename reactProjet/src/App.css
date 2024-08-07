@@ -5,11 +5,10 @@
   flex-direction: column;
 }
 main{
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 h1{
   margin-left:.675rem;
   font-size: 15px;
   color: white;
 }
-

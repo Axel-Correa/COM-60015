@@ -5,7 +5,7 @@ import CartWidget from "../CartWidget/CartWidget";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='nav'> 
             <img src={logo} alt="" />
             <nav>
                 <ul>
@@ -15,7 +15,7 @@ const Navbar = () => {
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-            <CartWitdget/>
+            <CartWidget/>
         </div>
     )
 }

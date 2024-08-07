@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "../CartWidget/CartWidget";
 
 const ItemListContainer =({greeting})=> {
     return(
@@ -7,3 +8,4 @@ const ItemListContainer =({greeting})=> {
         </div>
     )
 }
+export default ItemListContainer

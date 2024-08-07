@@ -1,10 +1,19 @@
 header{
     width: 100%;
 }
-div{
+img{
+    width: 10%;
+    height: 10%;
+
+}
+.nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-
 }
-
+nav ul li{
+    font-size: 32px;
+    margin: 20px 20px 20px 20px;
+    display: inline-block;
+}
