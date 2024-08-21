@@ -1,0 +1,33 @@
+.carrito{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 20%;
+    transition: transform 0.4s ease-in-out, box-shadow: 0.3s ease-in-out;
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 4px 9px grey;
+}
+
+.carrito:active{
+    transform:translateY(-5px) ;
+}
+
+.carrito:hover{
+    box-shadow: 0 9px 17px grey;
+}
+.carrito h2{
+    color: rgb(244, 188, 240);
+    text-align: center;
+    font-family:"Orbitron", sans-serif;
+}
+.carrito p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family:"Orbitron", sans-serif;
+}
+.carrito img{
+    width: 100%;
+    height: 100%;
+    border-radius:9px 9px 0 0 ;
+}

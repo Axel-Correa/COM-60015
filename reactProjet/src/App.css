@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/*font-family:"Orbitron", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wdth,wght@87.5,100..900&family=Orbitron&display=swap');
+/*font-family: "Encode Sans SC", sans-serif;*/
 
 
 .todo{
@@ -8,7 +12,8 @@ main{
   background-color: rgb(0, 0, 0);
 }
 h1{
+  font-family:"Orbitron", sans-serif;
   margin-left:.675rem;
-  font-size: 15px;
-  color: white;
+  font-size: 36px;
+  color: rgba(178, 166, 166, 0.778);
 }
