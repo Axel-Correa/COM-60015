@@ -1,14 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const error = () => {
+const Error = () => {
     return (
         <div>
-
-        <h2>Error 404, pagina no encontrada.</h2>
-        <link> </link>
+            <h2>Error 404, pagina no encontrada.</h2>
         </div>
     )
 }
 
-export default error
+export default Error

@@ -4,7 +4,9 @@
         "nombre": "Paragolpe",
         "precio": 230000,
         "imagen": "../src/assets/img/Paragolpe.jpg",
-        "stock": 50
+        "stock": 50,
+        "category": "Paragolpe"
+
     },
 
     {
@@ -12,7 +14,8 @@
         "nombre": "Optica",
         "precio": 200000,
         "imagen": "../src/assets/img/Optica.jpg",
-        "stock": 30
+        "stock": 30,
+        "category": "Optica"
     },
 
     {
@@ -20,7 +23,8 @@
         "nombre": "Guardabarro",
         "precio": 90000,
         "imagen": "../src/assets/img/Guardabarro.jpg",
-        "stock": 16
+        "stock": 16 ,
+        "category": "Guardabarro"
     },
     
     {
@@ -28,7 +32,8 @@
         "nombre": "Faro",
         "precio": 170000,
         "imagen": "../src/assets/img/Faro.jpg",
-        "stock": 14
+        "stock": 14 , 
+        "category": "Faro"
     }
 
 ]
