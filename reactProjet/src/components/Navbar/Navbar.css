@@ -22,3 +22,7 @@ nav ul li{
     color: rgb(15, 14, 14);
     font-family:"Orbitron", sans-serif;
 }
+
+.active{
+    color: violet;
+}

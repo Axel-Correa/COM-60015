@@ -14,10 +14,10 @@ const ItemListContainer =({greeting})=> {
             try{
                 const response = await fetch ('/products.json')
                 const data = await response.json()
-                const filtradoDeProductos = categoryId ? data.filter((p) => p.category === categoryId): data;
-                setProducts(filtradoDeProductos)
+                const filteredProducts = categoryId ? data.filter((p) => p.category === categoryId) : data;
+                setProducts(filteredProducts)
                 setProducts(data)
-            }catch(error){
+            }catch(error){  
                 console.log(error)
             }
         }

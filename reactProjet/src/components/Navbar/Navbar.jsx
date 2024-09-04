@@ -10,11 +10,11 @@ const Navbar = () => {
             <img src={logo} alt="" />
             <nav>
                 <ul>
-                    <li><Link to="/" className='link'>Home</Link></li>
-                    <li><Link to="/category/Paragolpe" className='link'>Paragolpe</Link></li>
-                    <li><Link to="/category/Optica" className='link'>Optica</Link></li>
-                    <li><Link to="/category/Guardabarro" className='link'>Guardabarro</Link></li>
-                    <li><Link to="/category/Faro" className='link'>Faro</Link></li>
+                    <li><NavLink to="/" className='link'activeClassName = "active" >Home</NavLink></li>
+                    <li><NavLink to="/category/Paragolpe" className='link'activeClassName = "active" >Paragolpe</NavLink></li>
+                    <li><NavLink to="/category/Optica" className='link'activeClassName = "active" >Optica</NavLink></li>
+                    <li><NavLink to="/category/Guardabarro" className='link'activeClassName = "active" >Guardabarro</NavLink></li>
+                    <li><NavLink to="/category/Faro" className='link'activeClassName = "active" >Faro</NavLink></li>
                 </ul>
             </nav>
             <CartWidget/>
