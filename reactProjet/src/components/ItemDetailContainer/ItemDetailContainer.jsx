@@ -3,6 +3,7 @@ import { useState,useEffect } from "react"
 import "./ItemDetailContainer.css"
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
+import Spinner from '../Spinner/Spinner'
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState("")
@@ -21,12 +22,12 @@ const ItemDetailContainer = () => {
             }
         }
         fetchData()
-    },[])
+    },[id])
 
 
     return (
-        <div className='carritoList'>
-            <ItemDetail product={product}/>
+        <div className='ItemDetailContainer'>
+            {product == undefined ? <Spinner/> : <ItemDetail product={product}/>}
         </div>
     )
 }
