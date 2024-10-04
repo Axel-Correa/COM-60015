@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import "./App.css"
@@ -10,12 +10,25 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import CartProvider from './context/CartContext/CartProvider'
 import Cart from './components/Cart/Cart';
 
+import {db} from "./main";
+import { getFirestore,collection, getDocs } from 'firebase/firestore';
+
 
 
 
 
 function App() { 
-  const [count, setCount] = useState(0)
+  const [products, setProducts] = useState([])
+
+  useEffect (() => {
+    const db = getFirestore ();
+
+    const itemsCollection = collection (db, "item")
+    getDocs (itemsCollection).then((snapshot) => {
+      setProducts(snapshot.docs.map ((doc) => ({id: doc.id, ...doc.data ()})));
+    })
+  }, []);
+
   return (
     <CartProvider>
       <div className='todo'>
