@@ -1,3 +1,4 @@
+/* NO SE USA ESTO, UN RESPALDO POR SI FALLA FIRESTORE*/
 [
     {
         "id": 1 ,
@@ -37,5 +38,4 @@
     }
 
 ]
-
 
