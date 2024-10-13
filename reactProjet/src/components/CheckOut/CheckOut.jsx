@@ -42,6 +42,7 @@ const CheckOut = () => {
             email,
             emailconfirm
         };
+        console.log("Order being sent:", order); 
         Promise.all(
             order.items.map(async(productOrder)=>{
                 const productRef=doc(db,"item", productOrder.id);
