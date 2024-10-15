@@ -5,7 +5,7 @@ import "./Error.css"
 const Error = () => {
     return (
         <div className='msjError'>
-            <h2>Error 404, pagina no encontrada.</h2>
+            <h2>Error 404, pagina no fue encontrada.</h2>
         </div>
     )
 }
